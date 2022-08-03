@@ -44,6 +44,14 @@ $("#firewalldType").change(function(){
 		p = '欲屏蔽的IP地址';
 		t = '屏蔽';
 		m = '说明: 支持屏蔽IP段，如: 192.168.0.0/24';
+	},
+	if(type == 'ip'){
+		w = '150px';
+		p = '欲放行的IP地址';
+		w = '150px';
+		p = '放行的端口';
+		t = '放行';
+		m = '说明: 支持屏蔽IP段，如: 192.168.0.0/24';
 	}
 	$("#AcceptPort").css("width",w);
 	$("#AcceptPort").attr('placeholder',p);
